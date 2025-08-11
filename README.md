@@ -40,7 +40,6 @@ PmHub 包括认证、流程、项目管理、用户、网关等服务。包含�
 
 可以根据自己的实际情况选择合适的版本进行学习，我们将会倾其所有，在第一时间帮助大家解决所有学习过程遇到的问题，让你的学习曲线变得非常丝滑😁。
 
-* 项目文档教程：https://laigeoffer.cn/
 * 在线体验地址：https://pmhub.laigeoffer.cn/
 
 ![pmhub-业务架构图](https://cdn.tobebetterjavaer.com/stutymore/laigeoffer-pmhub-%E4%B8%9A%E5%8A%A1%E5%A4%A7%E5%9B%BE.png)
