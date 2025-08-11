@@ -102,6 +102,4 @@ com.laigeoffer.pmhub
 ├──pom.xml                                            // 公共依赖
 ```
 
-Copyright (c) 2023-2024 PmHub（苍何、沉默王二）
-
 
