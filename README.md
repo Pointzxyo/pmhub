@@ -48,23 +48,8 @@ PmHub 包括认证、流程、项目管理、用户、网关等服务。包含�
 此为 PmHub 微服务版本说明文档！单体版本说明文档请移步：[单体版本说明](https://github.com/laigeoffer/pmhub/blob/master/pmhub-boot/README.md)
 
 
-## 二、关于来个 offer 组织
-
-来个 offer 组织由二哥发起，苍何主理，旨在帮助同学们在校招、社招中拿到满意的 offer。
-
-- 二哥，原创公众号“沉默王二”累计 18 万+ 读者，GitHub 星标 11000+ 开源知识库《二哥的 Java 进阶之路》作者，帮助很多很多同学成功拿到满意的 offer。
-- 苍何，原创公众号“苍何”作者，CSDN 博客专家，阿里云专家博主，GitHub 开发者计划成员，前大厂技术专家，技术、管理、面试经验丰富。
-
-加入[PmHub官方编程星球](https://laigeoffer.cn/zsxq/)后，即可解锁来个 offer 组织下的所有项目的付费文档及产品原型，以及 1 对 1 的技术面试辅导服务。
-
-
-项目|码云|GitHub|简介
----|---|---|---
-PmHub| [Gitee](https://gitee.com/laigeoffer/pmhub) | [GitHub](https://github.com/laigeoffer/pmhub) | 一套智能项目管理系统，即将帮助不少同学在接下来的校招/社招中斩获满意 offer。
-技术派| [Gitee](https://gitee.com/itwanger/paicoding) | [GitHub](https://github.com/itwanger/paicoding) | 一个前后端分离的社区项目，帮助过不少同学在秋招中斩获满意 offer。
-
-## 三、项目详情
-### 3.1、技术架构
+## 二、项目详情
+### 2.1、技术架构
 
 下面这张系统架构图可以帮助大家快速了解 PmHub 项目的系统架构，从前端到网关、从服务应用到基础服务组件、从存储技术到运维部署，可以说是一目了然。
 
@@ -80,10 +65,7 @@ PmHub| [Gitee](https://gitee.com/laigeoffer/pmhub) | [GitHub](https://github.com
 
 优质的项目，离不开一张清晰的鸟瞰图（😄）。
 
-### 3.2、项目演示
-- 项目仓库（GitHub）：https://github.com/laigeoffer/pmhub
-- 项目仓库（码云）：https://gitee.com/laigeoffer/pmhub （国内访问速度更快）
-- 项目演示地址：https://pmhub.laigeoffer.cn（微信搜索「苍何」，关注我们的公众号，回复 `pmhub` 获取账号和密码，帮我们增加一个粉丝，哈哈哈，开源不易，请满足一下我的虚荣心（😁）。）
+### 2.2、项目演示
 
 ![首页展示](https://cdn.tobebetterjavaer.com/stutymore/20240407163006.png)
 ![项目概览页](https://cdn.tobebetterjavaer.com/stutymore/202404071500496.png)
@@ -91,10 +73,9 @@ PmHub| [Gitee](https://gitee.com/laigeoffer/pmhub) | [GitHub](https://github.com
 ![PmHub表单设计](https://cdn.tobebetterjavaer.com/stutymore/1719456780250-d60beb66-7cd3-4dc5-95c1-893d364ab56a.png)
 ![PmHub流程设计页面](https://cdn.tobebetterjavaer.com/stutymore/1719458145592-0d855810-b4ca-44c8-a8cc-04b1ac4baa2d.png)
 
-### 3.3、代码展示
-![pmhub代码展示](https://cdn.tobebetterjavaer.com/stutymore/20240529152747.png)
 
-### 3.4、代码结构
+
+### 2.3、代码结构
 
 ```
 com.laigeoffer.pmhub     
@@ -121,38 +102,7 @@ com.laigeoffer.pmhub
 ├──pom.xml                                            // 公共依赖
 ```
 
-## 四、项目部署
-> 单体版本请参考：[单体版本部署手册](https://github.com/laigeoffer/pmhub/blob/master/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%AF%E5%8A%A8%E6%95%99%E7%A8%8B.md)
-### 4.1、环境准备
-|    | 技术                  | 名称        | 版本         | 官网                                                                                                 |
-|----|---------------------|-----------|------------|----------------------------------------------------------------------------------------------------|
-| 1  | Spring Boot         | 基础框架      | 2.7.18     | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
-| 2  | SpringCloud         | 微服务框架     | 2021.0.8   | [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud)                 |
-| 3  | SpringCloud Alibaba | 阿里微服务框架   | 2021.0.5.0 | [https://github.com/alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba) |
-| 4  | SpringCloud Gateway | 服务网关      | 3.1.8      | [https://spring.io/projects/spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway) |
-| 5  | MyBatis-Plus        | 持久层框架     | 3.5.1      | [https://baomidou.com](https://baomidou.com)                                                       |
-| 6  | Redis               | 分布式缓存数据库  | Latest     | [https://redis.io](https://redis.io)                                                               |
-| 7  | RocketMQ            | 消息队列      | 2.2.3      | [https://rocketmq.apache.org](https://rocketmq.apache.org)                                         |
-| 8  | HuTool              | 小而全的工具集项目 | 5.8.11     | [https://hutool.cn](https://hutool.cn)                                                             |
-| 9  | Maven               | 项目构建管理    | 3.9.1      | [http://maven.apache.org](http://maven.apache.org)                                                 |
-| 10 | Sentinel            | 流控防护框架    | 1.8.6      | [https://github.com/alibaba/Sentinel](https://github.com/alibaba/Sentinel)                         |
-| 11 | Java                | 开发版本      | 1.8        | [https://www.oracle.com/java/technologies](https://www.oracle.com/java/technologies)               |
 
-
-
-### 4.2、后端项目启动
-
-#### 第一步，下载项目源码
-
-①、使用 Git 命令
-
-网络比较通畅的小伙伴可以直接从 GitHub 上拉取，命令如下：
-
-```
-git clone git@github.com:laigeoffer/pmhub.git
-```
-
-国内的小伙伴也可以直接使用码云 Gitee 上的镜像仓库地址拉取：
 
 ```
 git clone https://gitee.com/laigeoffer/pmhub.git
